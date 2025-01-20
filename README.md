@@ -29,7 +29,7 @@ Before proceeding, ensure you have the following installed:
 1. **Clone the Repository**  
    Clone the repository to your local machine:  
    ```bash
-   git clone <repository-url>
+   git clone 
    ```
 
 2. **Install Dependencies**  
@@ -47,16 +47,8 @@ Before proceeding, ensure you have the following installed:
    ```
 
 4. **Configure MongoDB Connection**  
-   Set up the connection to MongoDB in the backend file (e.g., `index.js`). Use a connection string like the following:  
-   ```javascript
-   const mongoose = require('mongoose');
-   const connectionString = "mongodb+srv://<username>:<password>@cluster.mongodb.net/<database-name>?retryWrites=true&w=majority";
-
-   mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-     .then(() => console.log("Connected to MongoDB"))
-     .catch(err => console.error("MongoDB connection error:", err));
-   ```
-
+   Set up the connection to MongoDB in the backend file (`index.js`). Use a connection string like the following:  
+  
 5. **Run the Backend**  
    Start the backend server:  
    ```bash
@@ -92,7 +84,6 @@ Once both the backend and frontend are set up, you can run both servers:
 
 2. Start the frontend:  
    ```bash
-   cd src
    yarn start
    ```
 
@@ -105,8 +96,10 @@ Once both the backend and frontend are set up, you can run both servers:
 
 1. **MongoDB Configuration**  
    - Create a MongoDB cluster.  
-   - Create a database user with a username and password.  
+   - Create a database user with a username and password.
+   - Install the Mongodb for vscode extension.
    - Obtain your MongoDB connection string and use it in your backend configuration.
+   - Change the MONGO URL in the .env file.
 
 2. **Database Connection Troubleshooting**  
    - **Check Connection String:** Ensure it is correctly formatted and free of typos.  
@@ -121,3 +114,5 @@ Once both the backend and frontend are set up, you can run both servers:
 
 2. **Database Connection Issues**  
    Verify your connection string, database name, and credentials.
+If found any error or stuck at any point ping me.
+ 
